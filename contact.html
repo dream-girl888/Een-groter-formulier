@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- hier zet je de code in de head tags -->
+  <title> Dream-girl888 - Leefstijl </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- hier zet je de code in de body tags-->
+
+  <header>
+    <h1 class="title"> Contact</h1>
+    <nav>
+      <ul>
+        <li class="links"><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <!--formulier gebruiken in netlify, moet code method, data-netlify en altijd name gebruiken-->
+      <form name="contact" method="POST" data-netlify="true">
+        <!-- <form action="results.html" method="GET" enctype="multipart/form-data"> -->
+        <p>
+          <label for="name">Naam</label>
+          <input type="text" name="name" id="name" required />
+        </p>
+        <p>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+          <label for="phone">Telefoon</label>
+          <input type="tel" name="phone" id="phone" />
+        </p>
+        <p>
+          <label for="age">Leeftijd</label>
+          <input type="number" name="age" id="age" min="1" max="200" step="1" />
+        </p>
+        <p>
+          <label for="date">Geboortedatum</label>
+          <input type="date" name="date" id="date" min="2019-06-10" />
+        </p>
+        <p>
+          Geslacht:
+        <p>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Man</label>
+
+        </p>
+        <p>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+
+        </p>
+        </p>
+        <p>
+          Favorite Cuisine:
+        <p>
+          <input type="checkbox" name="italian" id="italian" />
+          <label for="italian">Italiaans</label>
+
+        </p>
+        <p>
+          <input type="checkbox" name="french" id="french" />
+          <label for="french">Frans</label>
+
+        </p>
+        <p>
+          <input type="checkbox" name="spanish" id="spanish" />
+          <label for="spanish">Spaans</label>
+
+        </p>
+        <p>
+          <input type="checkbox" name="arabic" id="arabic" />
+          <label for="arabic">Arabisch</label>
+
+        </p>
+        </p>
+        <p>
+          <label for="color">Favoriete kleur van je schort</label>
+          <input type="color" name="color" id="color" />
+        </p>
+
+        <p>
+          <label for="bio">Biografie</label>
+          <textarea id="bio" name="bio"></textarea>
+        </p>
+        <input type="hidden" name="hidden" value="hi" />
+        <p>
+          <label for="file">Upload jouw recept</label>
+          <input id="file" type="file" name="file" />
+        </p>
+
+        <p>
+          <label for="url">Jouw websitelink</label>
+          <input type="url" name="url" id="url" />
+        </p>
+
+        <button type="reset">Opschonen</button>
+        <button type="submit">Versturen</button>
+      </form>
+    </article>
+  </main>
+  <hr>
+</body>
+
+</html>
